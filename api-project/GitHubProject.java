@@ -24,11 +24,11 @@ public class GitHubProject {
 		// Create request specification
 	    requestSpec = new RequestSpecBuilder()
 	        .setContentType(ContentType.JSON) //set content
-	        .addHeader("Authorization", "token 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") // specifying token
+	        .addHeader("Authorization", "token ") // specifying token
 	        .setBaseUri("https://api.github.com") // specifying base url
 	        .build(); // build request
 	    
-	    sshkey="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwrO3x+Cfe+gOcemAjPt8PZXFIbueAOfy5SA3Jol0ucpDe95AH4ZwTo3p1/rAyuspJcvfcx3FsaO/LNjpMIIVFRFVCgwkhfqkukMeTFv5V0j5EyRgiSNCOtI6y2rW7f25Ccx1UecTyII9abzyQXk8XrLuoPWnRLcq9o2CYaanJNKm2IXXYYl3s7MhoszzNV8gwW2HWTKtWvxcoIVHh+JNe4CpG9yQvdtINpXJwMr1LhGYRVbAkF7Q39VSscCYv+TpxbrFjohNYCwYbnzKbdgBQUb+wf4fhGm7PrREcBRubzQ6Jijj8P6Jw5v+SiSLIAhR5p2Ht1rjLqLZ83dDCgOjN";
+	    sshkey="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwrO3x+Cfe+gOcemAjPt8PZXFIbueAOfy5SA3Jol0ucpDe95AH4ZwTo3p1//++TpxbrFjohNYCwYbnzKbdgBQUb++SiSLIAhR5p2Ht1rjLqLZ83dDCgOjN";
 	}	
 	@Test(priority=1)
 	 public void addKey() {
